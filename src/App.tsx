@@ -1,4 +1,3 @@
-import React from "react";
 import { StoreProvider } from "./components/StoreProvider";
 import createStore from "./dataLayer/stores/createStore";
 

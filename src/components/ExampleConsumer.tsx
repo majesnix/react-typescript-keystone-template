@@ -1,4 +1,3 @@
-import React from "react";
 import RootStore from "../dataLayer/stores/RootStore";
 import useInject from "../hooks/useInject";
 
