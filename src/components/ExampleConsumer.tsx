@@ -1,7 +1,7 @@
 import RootStore from "../dataLayer/stores/RootStore";
 import useInject from "../hooks/useInject";
 
-const ExmapleConsumer: React.FunctionComponent = () => {
+const ExampleConsumer: React.FunctionComponent = () => {
   const Store = ({ exampleStore }: RootStore) => ({
     exampleStore,
   });
@@ -17,4 +17,4 @@ const ExmapleConsumer: React.FunctionComponent = () => {
   );
 };
 
-export default ExmapleConsumer;
+export default ExampleConsumer;
