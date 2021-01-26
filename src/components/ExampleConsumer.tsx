@@ -1,12 +1,7 @@
-import RootStore from "../dataLayer/stores/RootStore";
-import useInject from "../hooks/useInject";
+import { useStore } from "./StoreProvider";
 
 const ExampleConsumer: React.FunctionComponent = () => {
-  const Store = ({ exampleStore }: RootStore) => ({
-    exampleStore,
-  });
-
-  const { exampleStore } = useInject(Store);
+  const { exampleStore } = useStore();
 
   return (
     <>
