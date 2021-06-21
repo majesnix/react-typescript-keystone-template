@@ -8,18 +8,15 @@
   },
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.2",
-    "ky": "^0.25.1",
-    "mobx": "^6.0.5",
-    "mobx-keystone": "^0.48.4",
-    "mobx-react-lite": "^3.1.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "ky": "^0.28.5",
+    "mobx": "^6.3.2",
+    "mobx-keystone": "^0.60.2",
+    "mobx-react-lite": "^3.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "typescript": "~4.1.3"
+    "react-scripts": "4.0.3",
+    "typescript": "~4.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,11 +40,16 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.22",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-router": "^5.1.11",
-    "@types/react-router-dom": "^5.1.7"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-router": "^5.1.15",
+    "@types/react-router-dom": "^5.1.7",
+    "caniuse-lite": "^1.0.30001239",
+    "cypress": "^7.5.0"
   }
 }
