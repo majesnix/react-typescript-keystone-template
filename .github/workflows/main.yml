@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - "main"
+      - "master"
 
 concurrency:
   group: ci-tests-${{ github.ref }}-1
