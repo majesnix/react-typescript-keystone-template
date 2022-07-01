@@ -6,7 +6,7 @@ const ExampleConsumer: React.FunctionComponent = () => {
   return (
     <>
       {exampleStore.examples.map((example) => (
-        <div>{example.id}</div>
+        <div key={example.id}>{example.header}</div>
       ))}
     </>
   );
