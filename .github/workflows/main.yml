@@ -27,8 +27,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |
-          npm ci
-          npm test
+          yarn install --frozen-lockfile
+          yarn test
   e2e-chrome:
     name: e2e chrome
     runs-on: ubuntu-latest
