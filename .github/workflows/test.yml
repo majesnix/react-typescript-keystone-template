@@ -1,4 +1,4 @@
-name: Code Coverage (win)
+name: Unit and E2E tests
 
 on:
   workflow_call:
