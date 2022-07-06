@@ -1,4 +1,5 @@
 import ky from "ky";
+import Example from "../models/Example";
 
 class ApiClient {
   private ky: typeof ky;
@@ -8,7 +9,7 @@ class ApiClient {
    */
   constructor() {
     this.ky = ky.extend({
-      prefixUrl: process.env.REACT_APP_API_URL,
+      prefixUrl: process.env.REACT_APP_API_URL ?? "http://localhost:3000/",
       hooks: {
         beforeRequest: [
           (request) => {
@@ -24,21 +25,10 @@ class ApiClient {
   }
 
   /**
-   * Authenticate the given email and password
-   * @param email Email/Username of the Account
-   * @param password Password of the Account
-   * @returns {Promise} resolves to a JWT or Errors by wrong login data
-   *
+   * Fetch examples
    */
-  async login(email: string, password: string): Promise<string> {
-    return this.ky
-      .post("users/token", {
-        json: {
-          email,
-          password,
-        },
-      })
-      .json();
+  async getExamples(): Promise<Example[]> {
+    return this.ky.get("examples").json<Example[]>();
   }
 }
 

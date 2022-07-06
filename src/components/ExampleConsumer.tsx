@@ -1,7 +1,13 @@
+import { observer } from "mobx-react-lite";
+import { useEffect } from "react";
 import { useStore } from "./StoreProvider";
 
 const ExampleConsumer: React.FunctionComponent = () => {
   const { exampleStore } = useStore();
+
+  useEffect(() => {
+    exampleStore.getExamples();
+  }, []);
 
   return (
     <>
@@ -12,4 +18,4 @@ const ExampleConsumer: React.FunctionComponent = () => {
   );
 };
 
-export default ExampleConsumer;
+export default observer(ExampleConsumer);

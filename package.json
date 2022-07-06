@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "start:noBrowser": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ky)/\"",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "e2e": "start-server-and-test start:noBrowser http://localhost:3000 cypress:open",
@@ -58,6 +58,7 @@
     "caniuse-lite": "^1.0.30001363",
     "cross-env": "^7.0.3",
     "cypress": "^10.3.0",
+    "miragejs": "^0.1.45",
     "start-server-and-test": "^1.14.0"
   },
   "resolutions": {

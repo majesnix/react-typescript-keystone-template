@@ -36,3 +36,21 @@
 //   }
 // }
 import "@testing-library/cypress/add-commands";
+
+Cypress.on("window:before:load", (win) => {
+  // @ts-ignore
+  win.handleFromCypress = function (request) {
+    return fetch(request.url, {
+      method: request.method,
+      headers: request.requestHeaders,
+      body: request.requestBody,
+    }).then(async (res) => {
+      let content = res.headers.get("content-type").includes("application/json")
+        ? res.json()
+        : res.text();
+      return new Promise((resolve) => {
+        content.then((body) => resolve([res.status, res.headers, body]));
+      });
+    });
+  };
+});
