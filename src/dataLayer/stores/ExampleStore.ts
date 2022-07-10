@@ -7,7 +7,7 @@ import {
   _async,
   _await,
 } from "mobx-keystone";
-import ApiClient from "../api/ApiClient";
+import { getExamples } from "../api/ApiClient";
 import Example from "../models/Example";
 
 @model("ExampleStore")
@@ -16,7 +16,7 @@ export default class ExampleStore extends Model({
 }) {
   @modelFlow
   getExamples = _async(function* (this: ExampleStore) {
-    this.examples = yield* _await(ApiClient.getExamples());
+    this.examples = yield* _await(getExamples());
   });
 
   @modelAction
