@@ -6848,10 +6848,10 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-mobx-keystone@^0.69.4:
-  version "0.69.4"
-  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.69.4.tgz#9a8164b92b482aa746c7aac433f4f506a835958c"
-  integrity sha512-P2DfSIMbCpEHInJ7NNj4F1GiOwtgknPLOiMIlUsfAUmIL4KX1hbw8GobwBiH0avvBBxlxlg995X2uYTyYhyXFw==
+mobx-keystone@^0.69.5:
+  version "0.69.5"
+  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.69.5.tgz#ab5d1a89519a0c38de5b6accbc0b3b17ebf72410"
+  integrity sha512-wK8zmGgpxP9MclO6GAMvAdIdUDafwqyu9k65B5tCn2v3pNSvHkVLgJ50NgQ4PMeZEx2dHtKJLm58hpVAglJiyA==
   dependencies:
     fast-deep-equal "^3.1.3"
     nanoid "^3.3.4"
