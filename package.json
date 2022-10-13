@@ -10,7 +10,7 @@
   "dependencies": {
     "ky": "^0.31.4",
     "mobx": "^6.6.2",
-    "mobx-keystone": "^1.1.0",
+    "mobx-keystone": "^1.1.1",
     "mobx-react-lite": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
