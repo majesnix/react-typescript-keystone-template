@@ -55,7 +55,7 @@
     "@types/react-dom": "^18.0.9",
     "@types/react-router": "^5.1.19",
     "@types/react-router-dom": "^5.3.3",
-    "caniuse-lite": "^1.0.30001431",
+    "caniuse-lite": "^1.0.30001434",
     "cross-env": "^7.0.3",
     "cypress": "^11.1.0",
     "miragejs": "^0.1.46",
