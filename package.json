@@ -57,7 +57,7 @@
     "@types/react-router-dom": "^5.3.3",
     "caniuse-lite": "^1.0.30001448",
     "cross-env": "^7.0.3",
-    "cypress": "^12.4.0",
+    "cypress": "^12.4.1",
     "miragejs": "^0.1.47",
     "start-server-and-test": "^1.15.3"
   },
