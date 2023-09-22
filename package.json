@@ -59,7 +59,7 @@
     "cross-env": "^7.0.3",
     "cypress": "^13.2.0",
     "miragejs": "^0.1.47",
-    "start-server-and-test": "^2.0.0"
+    "start-server-and-test": "^2.0.1"
   },
   "resolutions": {
     "open": "7.4.2"
