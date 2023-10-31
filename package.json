@@ -58,7 +58,7 @@
     "caniuse-lite": "^1.0.30001558",
     "cross-env": "^7.0.3",
     "cypress": "^13.3.3",
-    "miragejs": "^0.1.47",
+    "miragejs": "^0.1.48",
     "start-server-and-test": "^2.0.1"
   },
   "resolutions": {
