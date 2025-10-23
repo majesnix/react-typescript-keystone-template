@@ -8,7 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "ky": "^0.33.3",
+    "ky": "^1.13.0",
     "mobx": "^6.13.5",
     "mobx-keystone": "^1.11.1",
     "mobx-react-lite": "^4.0.7",
