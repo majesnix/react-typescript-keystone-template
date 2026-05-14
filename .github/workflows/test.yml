@@ -9,29 +9,34 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x, 22.x]
+        node-version: [22.x, 24.x]
 
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install and test
+          cache: pnpm
+      - name: pnpm install and test
         run: |
-          yarn install --frozen-lockfile
-          yarn test
+          pnpm install --frozen-lockfile
+          pnpm test
   e2e-chrome:
     name: e2e chrome
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
-      options: --user 1001
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22.x
+          cache: pnpm
 
       - name: Cypress tests 🧪
         uses: cypress-io/github-action@v7
         with:
-          command: yarn e2e:ci
+          command: pnpm e2e:ci

@@ -2,10 +2,10 @@ import ky from "ky";
 import Example from "../models/Example";
 
 const kyClient = ky.extend({
-  prefixUrl: process.env.REACT_APP_API_URL ?? "http://localhost:3000/",
+  prefix: process.env.REACT_APP_API_URL ?? "http://localhost:3000/",
   hooks: {
     beforeRequest: [
-      (request) => {
+      ({ request }) => {
         const token = localStorage.getItem("token");
 
         if (token != null) {

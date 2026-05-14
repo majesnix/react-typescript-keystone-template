@@ -4,7 +4,42 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      react-router:
+        patterns:
+          - "react-router"
+          - "@types/react-router"
+          - "@types/react-router-dom"
+      mobx:
+        patterns:
+          - "mobx"
+          - "mobx-keystone"
+          - "mobx-react-lite"
+      testing-library:
+        patterns:
+          - "@testing-library/*"
+        exclude-patterns:
+          - "@testing-library/cypress"
+      cypress:
+        patterns:
+          - "cypress"
+          - "@testing-library/cypress"
+      node-tooling:
+        patterns:
+          - "@types/node"
+          - "cross-env"
+          - "start-server-and-test"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      cypress-actions:
+        patterns:
+          - "cypress-io/github-action"
